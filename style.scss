@@ -1,0 +1,34 @@
+@import "./myStyles";
+
+
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  @include boxStyle($secondary_color, $size5_00, $size5_00);
+}
+.box2 {
+  @include boxStyle($warning_color, $size6_00, $size5_00);
+}
+.box3 {
+  @include boxStyle($warning_color, $size7_00, $size5_00);
+}
+.box4 {
+  @include boxStyle($primary_color, $size7_00, $size5_00);
+}

@@ -1,0 +1,42 @@
+//color set
+$primary_color : #34ace0;
+$secondary_color : #33d9b2;
+$warning_color : #ff793f;
+$danger_color : #ffda79;
+$box_color : #f7f1e3;
+
+
+//shadow and radius
+$radius_circle: 50%;
+$radius_heavy:31px;
+$radius_medium:12px;
+$radius_light: 6px;
+
+$shadow_color:#d1ccc0;
+$shadow_heavy:0 55px 20px $shadow_color;
+$shadow_medium: 0 15px 10px $shadow_color;
+$shadow_light: 0 10px 6px -6px $shadow_color;;
+
+// size
+$size1:4px;
+$size2:8px;
+$size3:12px;
+$size4:18px;
+
+$size5_00:100px;
+$size6_00:140px;
+$size7_00:190px;
+$size8_00:240px;
+
+
+
+@mixin boxStyle($bg_color, $width, $height) {
+    padding: $size1;
+    margin: $size3;
+    background-color: $bg_color;
+    box-shadow: $shadow_heavy;
+    border-radius: $radius_light;
+    text-align: center;
+    width: $width;
+    height: $height;
+  }
